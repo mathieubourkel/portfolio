@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../assets/fonts/Poppins-ExtraBold.ttf') format('truetype');
+}
+
+:root {
+  --color-bg: rgb(30, 30, 30);
+  --color-bg-2: rgb(23, 23, 23);
+  --color-bg-3: rgb(30, 30, 30, 0.5);
+  --color-bg-4: rgb(30, 30, 30, 0.2);
+  --color-bg-gradient: rgba(55, 52, 52, 0.618);
+  --color-primary: rgb(79, 72, 112);
+  --color-secondary: #485670;
+  --color-secondary-2: rgb(72, 86, 112, 0.8);
+  --color-coucou : #485670;
+  --color-secondary-3: rgb(72, 86, 112, 0.5);
+  --color-secondary-4: rgb(72, 86, 112, 0.3);
+  --color-accent: rgb(223, 198, 83);
+  --color-accent-2: rgb(223, 198, 83, 0.8);
+  --color-accent-3: rgb(223, 198, 83, 0.5);
+  --color-text: rgb(237, 236, 232);
+  --color-text-2: rgb(237, 236, 232);
+  --gradient: linear-gradient(90deg, rgba(79, 72, 112,1) 0%, rgba(72, 86, 112,1) 100%);
+  --alt-gradient: linear-gradient(90deg, rgba(72, 86, 112,1) 0%, rgba(79, 72, 112,1) 100%);
+}
+
+html {
+  padding:0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size:22px;
+}
+
+.bg-2 {
+  background: var(--gradient);
+}
+
+.halo {
+  background: radial-gradient(circle at 20% 10%, var(--color-coucou) 0%, var(--color-bg) 10%);
+}
+
+.halo-2 {
+  background: radial-gradient(circle at 90% 50%, var(--color-primary) 0%, var(--color-bg-2) 20%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100svh;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-family: 'Poppins', "sans-serif";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card-glass {
+  background: rgba(79, 72, 112, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.7px);
+  -webkit-backdrop-filter: blur(10.7px);
+  border: 1px solid rgba(79, 72, 112, 0.64);
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  font-family: 'Montserrat', "sans-serif";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: 'Montserrat', "sans-serif";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h4 {
+  font-weight: 800;
+  font-family: 'Montserrat', "sans-serif";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p {
+  font-weight: 200;
+  font-family: 'Montserrat', "sans-serif";
+}
+
+.skill {
+  font-weight: 200;
+  font-family: 'Montserrat', "sans-serif";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+button {
+  background: var(--gradient);
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.7;
+  white-space: nowrap;
+}
+
+button:hover {
+  box-shadow: 7px 8px 5px -7px rgba(0,0,0,0.53);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li.active a{
+  color:var(--color-accent);
+  white-space: nowrap;
+  position: relative;
+}
+
+nav ul li.active a:after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.2em;
+  background: var(--gradient);
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+}
+/* .blurred {
+  filter: blur(5px);
+} */
+section {
+  transition: filter 0.3s ease; 
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 2rem;
+}
+
+nav ul li a {
+  color: var(--gradient);
+  text-decoration: none;
+  font-family: 'Montserrat', "sans-serif";
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+nav ul li a:hover {
+  background: -webkit-linear-gradient(rgb(237, 236, 232), rgb(79, 72, 112));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+ /* .bg-grad { 
+  background: radial-gradient(circle, rgba(72,86,112,0.5) 0%, rgba(79,72,112,0.5) 48%, rgba(48,48,48,0.3) 100%);
+}
+
+.bg-halo {
+  background-image: url("../assets/halo_3.png");
+  background-repeat: no-repeat;
+} */
