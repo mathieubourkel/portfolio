@@ -5,8 +5,8 @@ import { intTag } from "@/app/services/interfaces/tag";
 export default function About() {
     return (
       <div className='container flex flex-col items-center lg:flex-row py-10 2xl:py-0'>
-        <article className="flex flex-wrap gap-2 items-center lg:w-1/2 pt-10 lg:pt-0">
-        <ul className="cloud" role="navigation" aria-label="Webdev word cloud">
+        <article className="flex flex-wrap items-center  2xl:justify-start justify-center lg:w-1/2 pt-10 lg:pt-0">
+        <ul className="cloud w-[17rem]" role="navigation" aria-label="Webdev word cloud">
           {tags.map((tag:intTag, index:number)=>(
             <li key={index}><a href={tag.href} data-weight={tag.weight}>{tag.name}</a></li>
           ))}

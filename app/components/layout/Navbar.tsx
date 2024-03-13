@@ -7,7 +7,7 @@ export default function Navbar() {
   const [active, setActive] = useState<number>(0)
 
   return (
-    <nav className='items-center flex flex-wrap xl:h-24 h-16 px-10'>
+    <nav className='items-center flex flex-wrap xl:h-24 h-16 md:px-10 px-[1rem]'>
       <div>
         <Link to="/">
           <Image src={logo} alt="photo de mathieu bourkel" width={50} height={50}/>

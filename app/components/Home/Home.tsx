@@ -24,9 +24,9 @@ export default function Home() {
       </article>
       <article className='xl:w-1/2 xl:px-0 mt-5 flex flex-col self-center'>
         <h2 className='flex'><span>Hi There !</span></h2>
-        <div className='flex'>
+        <div className='md:flex'>
           <h1 >{"Mathieu"}</h1>
-          <h1 className='text-accent-1 familia ml-3'>{"Bourkel"}</h1>
+          <h1 className='text-accent-1 familia md:ml-3'>{"Bourkel"}</h1>
         </div>
         <div>
         <h2 className="hidden 2xl:block flex ">

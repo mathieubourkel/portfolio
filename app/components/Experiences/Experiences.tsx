@@ -4,7 +4,7 @@ import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 
 export default function Experiences() {
     return (
-      <div className='container flex items-center justify-center pt-20 rounded-md antialiased'>
+      <div className='container flex items-center justify-center pt-20 pb-10 lg:pb-0 rounded-md antialiased'>
       <InfiniteMovingCards
         items={testimonials}
         direction="right"

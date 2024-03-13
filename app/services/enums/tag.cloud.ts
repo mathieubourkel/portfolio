@@ -3,7 +3,7 @@ export const tags = [
     {name:"AWS", weight: "6", href:""},
     {name:"SysAdmin", weight: "7", href:""},
     {name:"Go", weight: "4", href:""},
-    {name:"Autonomous", weight: "4", href:""},
+    {name:"Autonomy", weight: "4", href:""},
     {name:"Self learning", weight: "4", href:""},
     {name:"Debugging", weight: "4", href:""},
     {name:"Web3", weight: "5", href:""},
