@@ -5,6 +5,7 @@ import { Link, animateScroll as scroll } from 'react-scroll';
 import './navbar.css';
 import { faXmark, faBars, faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./modal.css";
 
 export default function Navbar({sticky, active, handleOpen}:{sticky:boolean, handleOpen:() => void, active:number}) {
 
@@ -49,7 +50,7 @@ export default function Navbar({sticky, active, handleOpen}:{sticky:boolean, han
        </div>
       
   </nav>
-  {showMenu && <ul className={`lg:hidden  fixed z-40 w-full h-[88vh] menu-nav gap-10 small-caps flex flex-col items-center justify-center bg-bg-5 rounded-xl p-2 mt-2`}>
+  {showMenu && <ul className={`lg:hidden fixed z-40 w-full h-[88vh] menu-nav gap-10 small-caps flex flex-col items-center justify-center bg-bg-6 rounded-xl p-2 mt-2`}>
       <li className={`${active === 1 && 'active'} `}><Link to="home" smooth={true} duration={500} onClick={toggleMenu}>Home</Link></li>
         <li className={`${active === 2 && 'active'} `}><Link to="about" smooth={true} duration={500} onClick={toggleMenu}>About me</Link></li>
         <li className={`${active === 3 && 'active'} `}><Link to="skills" smooth={true} duration={500} onClick={toggleMenu}>Skills</Link></li>

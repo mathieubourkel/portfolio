@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ChangeEvent } from "react";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./modal.css";
 export type InputEvent = ChangeEvent<HTMLInputElement>;
 export const Modal = ({
   isOpen,
@@ -29,11 +30,9 @@ export const Modal = ({
 
   return (
     <>
-      {/* Fond obscurcissant */}
       {isOpen && (
-        <div className="fixed overflow-y-auto inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          {/* Contenu de la modal */}
-          <div className="rounded-lg p-8 max-w-md card-glass">
+        <div className="fixed momo overflow-y-auto inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="rounded-lg wrap p-8 max-w-md card-glass animate-scale">
             <div className="flex justify-end">
               <FontAwesomeIcon
                 onClick={handleClose}
@@ -42,9 +41,7 @@ export const Modal = ({
                 icon={faXmark}
               />
             </div>
-
-            {/* Contenu de la modal */}
-            <form className="w-full max-w-lg" onSubmit={handleSubmit}>
+            <form className="w-full max-w-lg" onSubmit={(e:any) => handleSubmit(e)}>
               <div className="mb-6 gap-2">
                 <div className='md:flex'>
                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
@@ -101,7 +98,7 @@ export const Modal = ({
                 </div>
               </div>
               <div className='flex justify-center'>
-              <button>Send</button>
+              <button type='submit' className='small-caps bg-prim-1'>Send</button>
               </div>
             </form>
           </div>
