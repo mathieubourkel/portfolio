@@ -17,7 +17,7 @@ export default function CardSkill({skills, title, icon}:Props) {
         <FontAwesomeIcon icon={icon} size="lg" color="rgb(223, 198, 83)" className='icon-truc'/>
      </div>
       
-      <h3 className='font-semibold'>{title}</h3>
+      <h3 className='font-semibold small-caps'>{title}</h3>
       </div>
       <hr />
       

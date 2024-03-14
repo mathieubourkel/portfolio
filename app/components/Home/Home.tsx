@@ -23,7 +23,7 @@ export default function Home() {
         
       </article>
       <article className='xl:w-1/2 xl:px-0 mt-5 flex flex-col self-center'>
-        <h2 className='flex'><span>Hi There !</span></h2>
+        <h2 className='flex small-caps'>Hi There !</h2>
         <div className='md:flex'>
           <h1 >{"Mathieu"}</h1>
           <h1 className='text-accent-1 familia md:ml-3'>{"Bourkel"}</h1>
@@ -35,7 +35,7 @@ export default function Home() {
         <h3 className="2xl:hidden flex"> 
           <TextGenerateEffect words="Backend Developer-DevOps.-Web3."/>
         </h3>
-        <p className='2xl:mt-20'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque et doloribus ratione repellendus ea, voluptatem dolore temporibus fuga, totam dicta exercitationem molestiae voluptatum? Est iusto commodi in itaque corrupti quidem.</p>
+        <p className='mt-5'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque et doloribus ratione repellendus ea, voluptatem dolore temporibus fuga, totam dicta exercitationem molestiae voluptatum? Est iusto commodi in itaque corrupti quidem.</p>
         </div>
         <div className='flex justify-between py-5 2xl:py-10'>
         <div>

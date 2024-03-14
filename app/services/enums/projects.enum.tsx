@@ -8,12 +8,12 @@ export const tabs = [
         value: 'chappy', 
         url: 'https://app-chappy.ddns.net/',
         content : (
-            <div className="w-full projects-card flex flex-col items-center h-full rounded-2xl p-10 font-semibold bg-gradient-to-b from-bg-1 to-prim-1">
-           <p>Project realise in team with microservices archi and deploy on AWS</p>
+            <div className="w-full projects-card flex flex-col items-center h-full rounded-2xl p-10 font-semibold card-glass-2">
+           <p className='tabul small-caps'>Project realise in team with microservices</p>
            <Image
                 src={chappy}
                 alt="Screem from Chappy App"
-                className="rounded-xl py-5"
+                className="object-cover rounded-xl py-5 w-[40rem] h-[30rem]"
                 />
          </div>
         ),
@@ -23,12 +23,12 @@ export const tabs = [
         value: 'nft',
         url: 'https://team-west-coast-nft.vercel.app/',
         content : (
-            <div className="w-full projects-card flex flex-col items-center h-full rounded-2xl p-10 font-semibold bg-gradient-to-b from-bg-1 to-prim-1">
-           <p>DApps for creating NFTs collection</p>
+            <div className="w-full projects-card flex flex-col items-center h-full rounded-2xl p-10 font-semibold card-glass-2">
+           <p className='tabul small-caps'>DApps for creating NFTs collection</p>
            <Image
                 src={marketplace}
                 alt="Screen for my Marketplace NFTS App"
-                className="rounded-xl py-5"
+                className="object-cover rounded-xl py-5 w-[40rem] h-[30rem]"
                 />
          </div>
         ),
@@ -38,12 +38,13 @@ export const tabs = [
         value: 'github',
         url: 'https://github.com/mathieubourkel',
         content : (
-            <div className="w-full projects-card flex flex-col items-center h-full rounded-2xl p-10 font-semibold bg-gradient-to-b from-bg-1 to-prim-1">
-           <p>All of my MS, back projects</p>
+            <div className="w-full projects-card flex flex-col items-center h-full rounded-2xl p-10 font-semibold card-glass-2">
+           <h2 className='text-accent-1 font-semibold small-caps'>Github</h2>
+           <p className='text-base'>Coucou les amis</p>
            <Image
                 src={github}
                 alt="Screen from my github account"
-                className="rounded-xl py-5"
+                className="object-cover rounded-xl py-5 w-[40rem] h-[30rem]"
                 />
          </div>
         ),

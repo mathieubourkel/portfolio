@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <footer className='bg-bg-2 bg-gradient-to-t from-prim-1 via-bg-1 to-bg-1'>
+    <footer className='bg-bg-2 small-case bg-gradient'>
     <div className="container">
       <div className="row">
 
@@ -18,10 +18,10 @@ export default function Footer() {
         </div>
       </div>
     </div>
-    <div className="text-center p-3 footer">
+    <div className="text-center small-caps p-3 footer">
       © 2024 Copyright :
-      <a className="footer px-1" href="https://www.linkedin.com/in/mathieu-bourkel/">Mathieu Bourkel |</a>Designed by :
-      <a className="footer pl-1" href="https://www.linkedin.com/in/laetitia-ashry/">Laetitia Ashry</a>
+      <a className="footer small-caps px-1" href="https://www.linkedin.com/in/mathieu-bourkel/">Mathieu Bourkel |</a>Designed by :
+      <a className="footer small-caps pl-1" href="https://www.linkedin.com/in/laetitia-ashry/">Laetitia Ashry</a>
     </div>
   </footer>
   )

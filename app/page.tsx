@@ -44,11 +44,11 @@ export default function Page() {
         <Skills />
       </section>
       
-      <section id="projects" className={`min-h-[80lvh] bg-bg-2 bg-gradient-to-b from-prim-1 via-bg-1 to-bg-1 ${active == 3 ? '' : ''}`}>
+      <section id="projects" className={`min-h-[80lvh] flex items-center pb-20 bg-bg-2 bg-gradient-to-t from-prim-1 via-bg-1 to-bg-1 ${active == 3 ? '' : ''}`}>
         <Projects />
       </section>
 
-      <section id="experiences" className={`min-h-[60lvh] bg-gradient-to-t from-sec-2 via-bg-2 to-bg-2${active == 4 ? '' : ''}`}>
+      <section id="experiences" className={`min-h-[60lvh] flex items-center bg-gradient-to-t from-sec-2 via-bg-2 to-bg-2${active == 4 ? '' : ''}`}>
         <Experiences />
       </section>
     </main>

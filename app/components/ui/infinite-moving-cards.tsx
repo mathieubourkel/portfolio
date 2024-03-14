@@ -100,7 +100,7 @@ export const InfiniteMovingCards = ({
     }
   }
   return (
-    <div className='container flex items-center justify-between pt-20 pb-10 lg:pb-0 rounded-md antialiased'>
+    <div className='container flex items-center justify-between pb-10 lg:pb-0 rounded-md antialiased'>
     <FontAwesomeIcon className='cursor-pointer' icon={faChevronLeft} onClick={scrollRight}/>
     <div
       ref={containerRef}
@@ -119,7 +119,7 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[15rem] max-w-full relative rounded-2xl border flex-shrink-0 border-prim-1 px-8 py-6 md:w-[450px]"
+            className="w-[15rem] card-glass max-w-full relative flex-shrink-0 px-8 py-6 md:w-[450px]"
             style={{
               background: "var(--color-bg-2)"
 
@@ -133,7 +133,7 @@ export const InfiniteMovingCards = ({
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
               <span className="flex flex-col gap-1">
-                  <h3 className="text-accent-1 font-semibold text-sm leading-[1.6] font-normal">
+                  <h3 className="text-accent-1 small-caps font-semibold text-sm leading-[1.6] font-normal">
                     {item.name}
                   </h3>
                   <h3 className="text-sm leading-[1.6] font-semibold">
