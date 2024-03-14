@@ -1,4 +1,4 @@
-import { faBitcoinSign, faDatabase, faDesktop, faGear, faInfinity, faListCheck, faShieldHalved } from "@fortawesome/free-solid-svg-icons"
+import { faBitcoinSign, faDatabase, faDesktop, faGear, faInfinity, faListCheck, faShieldHalved, faStar } from "@fortawesome/free-solid-svg-icons"
 import { faBitcoin, faReact } from "@fortawesome/free-brands-svg-icons"
 export const skills = [
     // const shield = faShieldHalved

@@ -37,7 +37,7 @@ export const testimonials = [
       {
         quote:
           "Graduated at ENI School, 3weeks at work, 1 week at school.",
-        name: "System and Network Technician - 2 years",
-        title: "ENGIE (France)",
+        name: "System and Network Technician",
+        title: "ENGIE (France) - 2 years",
       },
   ];

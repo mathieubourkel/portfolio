@@ -7,7 +7,7 @@ import "./home.css";
 import { faEthereum } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function Home() {
+export default function Home({handleOpen}:{handleOpen: () => void}) {
   return (
     <div className='container flex flex-col lg:flex-row-reverse lg:justify-between'>
     <article className='flex xl:justify-end self-center xl:w-1/2'>
@@ -39,7 +39,7 @@ export default function Home() {
         </div>
         <div className='flex justify-between py-5 2xl:py-10'>
         <div>
-        <button>Contact me</button>
+        <button onClick={handleOpen} className='small-caps'>Contact me</button>
         </div>
         
         

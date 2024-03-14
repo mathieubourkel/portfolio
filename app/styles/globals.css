@@ -144,8 +144,29 @@ button {
   transition: 0.7;
   white-space: nowrap;
 }
+form div label {
+  font-variant: small-caps;
+  text-transform: lowercase;
+  font-weight: 600;
+  color: var(--color-accent)
+}
 
+form div input {
+  background: transparent;
+  border: 1px solid rgba(79, 72, 112, 0.64);
+  border-radius: 10px;
+}
+
+form div textarea {
+  background: transparent;
+  border: 1px solid rgba(79, 72, 112, 0.64);
+  border-radius: 10px;
+}
 button:hover {
+  box-shadow: 7px 8px 5px -7px rgba(0,0,0,0.53);
+}
+
+.shadow:hover {
   box-shadow: 7px 8px 5px -7px rgba(0,0,0,0.53);
 }
 

@@ -7,11 +7,21 @@ import Home from "./components/Home/Home";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import { Projects } from "./components/Projects/Projects";
+import { Modal } from "./components/layout/Modal";
 
 
 export default function Page() {
   const [active, setActive] = useState<number>(1);
   const [isSticky, setSticky] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const handleOpen = () => {
+    if (!isOpen) {
+      document.body.classList.toggle('overflow-y-hidden') 
+    } else {
+      document.body.classList.remove('overflow-y-hidden');
+    }
+    setIsOpen((cur) => !cur)
+  }
   useEffect(() => {
     const handleScroll = () => {
 
@@ -36,9 +46,10 @@ export default function Page() {
   return (
     <>
       <main className=''>
-      <Navbar sticky={isSticky} active={active}/>
+      <Navbar sticky={isSticky} active={active} handleOpen={handleOpen}/>
+      <Modal isOpen={isOpen} handleOpen={handleOpen}/>
       <section id="home" className={`min-h-[100lvh] flex items-center`}>
-        <Home />
+        <Home handleOpen={handleOpen}/>
       </section>
       
       <section id="about" className={`min-h-[80lvh] flex items-center bg-gradient-to-tl from-prim-1 via-bg-1 to-bg-1`}>
