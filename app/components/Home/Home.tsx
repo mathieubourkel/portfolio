@@ -29,11 +29,11 @@ export default function Home() {
           <h1 className='text-accent-1 familia md:ml-3'>{"Bourkel"}</h1>
         </div>
         <div>
-        <h2 className="hidden 2xl:block flex ">
-          <TextGenerateEffect words="Backend Developer-DevOps.-Web3."/>
+        <h2 className="hidden 2xl:block flex font-medium">
+          <TextGenerateEffect words="Backend Developer.-DevOps.-Web3."/>
         </h2>
-        <h3 className="2xl:hidden flex"> 
-          <TextGenerateEffect words="Backend Developer-DevOps.-Web3."/>
+        <h3 className="2xl:hidden flex font-medium"> 
+          <TextGenerateEffect words="Backend Developer.-DevOps.-Web3."/>
         </h3>
         <p className='mt-5'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque et doloribus ratione repellendus ea, voluptatem dolore temporibus fuga, totam dicta exercitationem molestiae voluptatum? Est iusto commodi in itaque corrupti quidem.</p>
         </div>

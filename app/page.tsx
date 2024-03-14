@@ -10,16 +10,21 @@ import { Projects } from "./components/Projects/Projects";
 
 
 export default function Page() {
-  const [active, setActive] = useState<number>(0);
-
+  const [active, setActive] = useState<number>(1);
+  const [isSticky, setSticky] = useState<boolean>(false);
   useEffect(() => {
     const handleScroll = () => {
+
       const sectionHeight = document.documentElement.scrollHeight / 5 - 100;
-      if (window.scrollY < sectionHeight) setActive(0);
-      else if (window.scrollY < sectionHeight*2) setActive(1);
-      else if (window.scrollY < sectionHeight*3) setActive(2);
-      else if (window.scrollY < sectionHeight*4) setActive(3);
-      else if (window.scrollY < sectionHeight*5) setActive(4);
+      if (!isSticky && window.scrollY > sectionHeight) setSticky(true)
+      if (window.scrollY < sectionHeight) {
+        setActive(1);
+        setSticky(false)
+      }
+      else if (window.scrollY < sectionHeight*2) setActive(2);
+      else if (window.scrollY < sectionHeight*3) setActive(3);
+      else if (window.scrollY < sectionHeight*4) setActive(4);
+      else if (window.scrollY < sectionHeight*5) setActive(5);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -31,24 +36,24 @@ export default function Page() {
   return (
     <>
       <main className=''>
-      <Navbar />
-      <section id="home" className={`min-h-[92lvh] flex items-center ${active == 0 ? '' : ''}`}>
+      <Navbar sticky={isSticky} active={active}/>
+      <section id="home" className={`min-h-[100lvh] flex items-center`}>
         <Home />
       </section>
       
-      <section id="about" className={`min-h-[80lvh] flex items-center bg-gradient-to-tl from-prim-1 via-bg-1 to-bg-1${active == 1 ? '' : ''}`}>
+      <section id="about" className={`min-h-[80lvh] flex items-center bg-gradient-to-tl from-prim-1 via-bg-1 to-bg-1`}>
         <About />
       </section>
       
-      <section id="skills" className={`min-h-[80lvh] flex items-center bg-gradient-to-t from-sec-1 via-bg-2 to-bg-2 ${active == 2 ? '' : ''}`}>
+      <section id="skills" className={`min-h-[80lvh] flex items-center bg-gradient-to-t from-sec-1 via-bg-2 to-bg-2`}>
         <Skills />
       </section>
       
-      <section id="projects" className={`min-h-[80lvh] flex items-center pb-20 bg-bg-2 bg-gradient-to-t from-prim-1 via-bg-1 to-bg-1 ${active == 3 ? '' : ''}`}>
+      <section id="projects" className={`min-h-[80lvh] flex items-center pb-20 bg-bg-2 bg-gradient-to-t from-prim-1 via-bg-1 to-bg-1`}>
         <Projects />
       </section>
 
-      <section id="experiences" className={`min-h-[60lvh] flex items-center bg-gradient-to-t from-sec-2 via-bg-2 to-bg-2${active == 4 ? '' : ''}`}>
+      <section id="experiences" className={`min-h-[60lvh] flex items-center bg-gradient-to-t from-sec-2 via-bg-2 to-bg-2`}>
         <Experiences />
       </section>
     </main>
