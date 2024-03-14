@@ -1,6 +1,8 @@
 "use client";
 
 import { cn } from "@/app/utils/cn";
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 
 export const InfiniteMovingCards = ({
@@ -69,7 +71,37 @@ export const InfiniteMovingCards = ({
       }
     }
   };
+
+  const scrollLeft = () => {
+    if (containerRef.current) {
+      containerRef.current.style.setProperty(
+        "--animation-direction",
+        "reverse"
+      );
+      containerRef.current.style.setProperty("--animation-duration", "7s");
+      setTimeout(() => {
+        containerRef.current && containerRef.current.style.setProperty("--animation-duration", "40s")
+      }, 2000); // Délai en millisecondes, ajustez selon vos besoins
+
+    }
+  };
+
+  const scrollRight = () => {
+    if (containerRef.current) {
+      containerRef.current.style.setProperty(
+        "--animation-direction",
+        "forwards"
+      );
+      containerRef.current.style.setProperty("--animation-duration", "7s");
+      setTimeout(() => {
+        containerRef.current && containerRef.current.style.setProperty("--animation-duration", "40s");
+      }, 2000); // Délai en millisecondes, ajustez selon vos besoins
+
+    }
+  }
   return (
+    <div className='container flex items-center justify-between pt-20 pb-10 lg:pb-0 rounded-md antialiased'>
+    <FontAwesomeIcon className='cursor-pointer' icon={faChevronLeft} onClick={scrollRight}/>
     <div
       ref={containerRef}
       className={cn(
@@ -87,10 +119,11 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[15rem] max-w-full relative rounded-2xl border flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
+            className="w-[15rem] max-w-full relative rounded-2xl border flex-shrink-0 border-prim-1 px-8 py-6 md:w-[450px]"
             style={{
-              background:
-                "linear-gradient(90deg, rgba(79, 72, 112,1) 0%, rgba(72, 86, 112,1) 100%)",
+              background: "var(--color-bg-2)"
+
+                // "linear-gradient(90deg, rgba(79, 72, 112,1) 0%, rgba(72, 86, 112,1) 100%)",
             }}
             key={item.name}
           >
@@ -103,7 +136,7 @@ export const InfiniteMovingCards = ({
                   <h3 className="text-accent-1 font-semibold text-sm leading-[1.6] font-normal">
                     {item.name}
                   </h3>
-                  <h3 className=" text-sm leading-[1.6] font-semibold">
+                  <h3 className="text-sm leading-[1.6] font-semibold">
                     {item.title}
                   </h3>
                 </span>
@@ -117,6 +150,8 @@ export const InfiniteMovingCards = ({
           </li>
         ))}
       </ul>
+    </div>
+    <FontAwesomeIcon className='cursor-pointer' icon={faChevronRight} onClick={scrollLeft} />
     </div>
   );
 };

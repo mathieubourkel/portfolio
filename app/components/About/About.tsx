@@ -1,5 +1,5 @@
 import { tags } from "@/app/services/enums/tag.cloud";
-import "./cloud.css"
+import "./about.css"
 import { intTag } from "@/app/services/interfaces/tag";
 
 export default function About() {

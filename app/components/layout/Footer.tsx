@@ -20,7 +20,7 @@ export default function Footer() {
     </div>
     <div className="text-center p-3 footer">
       © 2024 Copyright :
-      <a className="footer pl-1" href="https://www.linkedin.com/in/mathieu-bourkel/">Mathieu Bourkel | Designed by :</a>
+      <a className="footer px-1" href="https://www.linkedin.com/in/mathieu-bourkel/">Mathieu Bourkel |</a>Designed by :
       <a className="footer pl-1" href="https://www.linkedin.com/in/laetitia-ashry/">Laetitia Ashry</a>
     </div>
   </footer>

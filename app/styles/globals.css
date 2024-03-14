@@ -117,7 +117,8 @@ button {
   font-size: 16px;
   padding: 10px 20px;
   border-radius: 15px;
-  font-weight: 600;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
   cursor: pointer;
   transition: 0.7;
   white-space: nowrap;
@@ -131,6 +132,8 @@ nav {
   display: flex;
   justify-content: space-between;
 }
+
+
 
 nav ul li.active a{
   color:var(--color-accent);
@@ -184,3 +187,31 @@ nav ul li a:hover {
   background-image: url("../assets/halo_3.png");
   background-repeat: no-repeat;
 } */
+
+.footer {
+  font-family: 'Montserrat', "sans-serif";
+  font-weight: 200;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.projects-card {
+  font-family: 'Montserrat', "sans-serif";
+  font-weight: 200;
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.footer a {
+  font-family: 'Montserrat', "sans-serif";
+  font-weight: 400;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
+ 
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}

@@ -2,11 +2,11 @@
 import { useEffect, useState } from "react";
 import Skills from "./components/Skills/Skills";
 import Experiences from "./components/Experiences/Experiences";
-import Projects from "./components/Projects/Projects";
 import About from "./components/About/About";
 import Home from "./components/Home/Home";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
+import { Projects } from "./components/Projects/Projects";
 
 
 export default function Page() {
@@ -44,7 +44,7 @@ export default function Page() {
         <Skills />
       </section>
       
-      <section id="projects" className={`min-h-[80lvh] bg-bg-2 bg-gradient-to-l from-prim-1 via-bg-1 to-bg-1 ${active == 3 ? '' : ''}`}>
+      <section id="projects" className={`min-h-[80lvh] bg-bg-2 bg-gradient-to-b from-prim-1 via-bg-1 to-bg-1 ${active == 3 ? '' : ''}`}>
         <Projects />
       </section>
 
