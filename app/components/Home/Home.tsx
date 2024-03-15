@@ -35,7 +35,10 @@ export default function Home({handleOpen}:{handleOpen: () => void}) {
         <h3 className="2xl:hidden flex font-medium"> 
           <TextGenerateEffect words="Backend Developer.-DevOps.-Web3."/>
         </h3>
-        <p className='mt-5'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque et doloribus ratione repellendus ea, voluptatem dolore temporibus fuga, totam dicta exercitationem molestiae voluptatum? Est iusto commodi in itaque corrupti quidem.</p>
+        <p className='mt-5'>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+         Atque et doloribus ratione repellendus ea, voluptatem dolore temporibu
+         s fuga, totam dicta exercitationem molestiae voluptatum? Est iusto commodi
+          in itaque corrupti quidem.</p>
         </div>
         <div className='flex justify-between py-5 2xl:py-10'>
         <div>

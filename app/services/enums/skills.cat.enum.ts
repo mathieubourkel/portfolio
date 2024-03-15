@@ -7,7 +7,7 @@ export const skills = [
         {name:'TypeScript'},
         {name:'Microservices'},
         {name:"NestJs | NATS "}, 
-        {name:'TDD | Clean architecture'}, 
+        {name:'TDD | Clean archi'}, 
         {name:'Redis'},
         
     ],
