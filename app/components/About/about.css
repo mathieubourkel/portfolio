@@ -21,6 +21,7 @@ display: block;
 padding: 0.125rem 0.25rem;
 position: relative;
 text-decoration: none;
+padding: 4px 4px 4px 4px;
 /* 
 For different tones of a single color
 opacity: calc((15 - (9 - var(--size))) / 15); 
@@ -46,14 +47,12 @@ ul.cloud li:nth-child(2n+1) a { --color: rgb(59, 78, 118); }
 ul.cloud li:nth-child(3n+1) a { --color: rgb(79, 72, 112); }
 ul.cloud li:nth-child(4n+1) a { --color: rgb(223, 198, 83); }
 
-ul.cloud a:focus {
-outline: 1px dashed;
-}
 
 ul.cloud a::before {
 content: "";
 position: absolute;
 top: 0;
+border-radius: 15px;
 left: 50%;
 width: 0;
 height: 100%;

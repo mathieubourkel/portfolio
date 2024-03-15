@@ -45,7 +45,7 @@ export const Modal = ({
               <div className="mb-6 gap-2">
                 <div className='md:flex'>
                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                  <label className="tracking-wide">
+                  <label className="tracking-wide ml-1">
                     First Name
                   </label>
                   <input
@@ -58,7 +58,7 @@ export const Modal = ({
                   />
                 </div>
                 <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                <label className="tracking-wide">
+                <label className="tracking-wide ml-1">
                     Last Name
                   </label>
                   <input
@@ -72,7 +72,7 @@ export const Modal = ({
                 </div>
                 </div>
                 <div className="w-full p-3">
-                  <label className="block tracking-wide mb-2">
+                  <label className="block ml-1 tracking-wide mb-2">
                     Email
                   </label>
                   <input
@@ -85,7 +85,7 @@ export const Modal = ({
                   />
                 </div>
                 <div className="w-full px-3">
-                  <label className="block tracking-wide mb-2">
+                  <label className="block ml-1 tracking-wide mb-2">
                     Content
                   </label>
                   <textarea

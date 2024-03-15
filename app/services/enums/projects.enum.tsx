@@ -2,51 +2,63 @@ import Image from "next/image";
 import chappy from "../../assets/chappy.png"
 import marketplace from "../../assets/marketplace.png"
 import github from "../../assets/github.png"
+import Link from "next/link";
 export const tabs = [
     {
         title:'Chappy',
         value: 'chappy', 
-        url: 'https://app-chappy.ddns.net/',
         content : (
-            <div className="w-full projects-card flex flex-col items-center h-full rounded-2xl p-10 font-semibold card-glass-2">
-           <p className='tabul small-caps'>Project realise in team with microservices</p>
+            <Link href='https://app-chappy.ddns.net/'>
+            <div className="w-full projects-card flex flex-col justify-center items-center h-full rounded-2xl p-10 font-semibold card-glass-2">
+           <p className='flex justify-center small-caps text-base lg:text-2xl'>Construction management app for individuals.</p>
            <Image
                 src={chappy}
                 alt="Screem from Chappy App"
                 className="object-cover rounded-xl py-5 w-[40rem] h-[30rem]"
                 />
+                <div className='flex'>
+                <p className='text-sm font-semibold text-accent-1 mr-1'>Stack : </p><p className='text-sm'>TS | React | MS | NATS | AWS</p>
+                </div>
          </div>
+         </Link>
         ),
     },
     {
         title: 'Marketplace NFT', 
         value: 'nft',
-        url: 'https://team-west-coast-nft.vercel.app/',
         content : (
+            <Link href='https://team-west-coast-nft.vercel.app/'>
             <div className="w-full projects-card flex flex-col items-center h-full rounded-2xl p-10 font-semibold card-glass-2">
-           <p className='tabul small-caps'>DApps for creating NFTs collection</p>
+           <p className='flex justify-center small-caps text-base lg:text-2xl'>DApp for creating NFT collections.</p>
            <Image
                 src={marketplace}
                 alt="Screen for my Marketplace NFTS App"
                 className="object-cover rounded-xl py-5 w-[40rem] h-[30rem]"
                 />
+                <div className='flex'>
+                <p className='text-sm font-semibold text-accent-1 mr-1'>Stack : </p><p className='text-sm'>Solidity | React | Hardhat | Remix | Smart contracts</p>
+                </div>
          </div>
+         </Link>
         ),
     },
     {
         title: 'Github',
         value: 'github',
-        url: 'https://github.com/mathieubourkel',
         content : (
+            <Link href='https://github.com/mathieubourkel'>
             <div className="w-full projects-card flex flex-col items-center h-full rounded-2xl p-10 font-semibold card-glass-2">
-           <h2 className='text-accent-1 font-semibold small-caps'>Github</h2>
-           <p className='text-base'>Coucou les amis</p>
+           <p className='text-base small-caps flex justify-center lg:text-2xl'>Some MS projects on my Github.</p>
            <Image
                 src={github}
                 alt="Screen from my github account"
                 className="object-cover rounded-xl py-5 w-[40rem] h-[30rem]"
                 />
+                <div className='flex'>
+                <p className='text-sm font-semibold text-accent-1 mr-1'>Stack : </p><p className='text-sm'>MS | Go | TS | React | Solidity</p>
+                </div>
          </div>
+         </Link>
         ),
     },
 ]
