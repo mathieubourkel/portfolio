@@ -24,7 +24,7 @@ export const tabs = [
         ),
     },
     {
-        title: 'Marketplace NFT', 
+        title: 'NFT', 
         value: 'nft',
         content : (
             <Link href='https://team-west-coast-nft.vercel.app/'>

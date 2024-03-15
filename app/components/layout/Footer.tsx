@@ -18,10 +18,10 @@ export default function Footer() {
         </div>
       </div>
     </div>
-    <div className="text-center small-caps p-3 footer">
-      © 2024 Copyright :
-      <a className="footer small-caps px-1" href="https://www.linkedin.com/in/mathieu-bourkel/">Mathieu Bourkel |</a>Designed by :
-      <a className="footer small-caps pl-1" href="https://www.linkedin.com/in/laetitia-ashry/">Laetitia Ashry</a>
+    <div className="text-center small-caps p-0 lg:p-3 footer items-center lg:flex lg:justify-center">
+      © <span className='ml-1 hidden lg:inline-block text-sm'>2024 Copyright :</span>
+      <a className="footer small-caps px-1 text-sm whitespace-nowrap" href="https://www.linkedin.com/in/mathieu-bourkel/">Mathieu Bourkel </a><div className='text-sm'>Design :
+      <a className="footer small-caps pl-1 text-sm whitespace-nowrap" href="https://www.linkedin.com/in/laetitia-ashry/">Laetitia Ashry</a></div>
     </div>
   </footer>
   )

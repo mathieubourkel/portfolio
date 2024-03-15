@@ -52,7 +52,7 @@ export const Tabs = ({
             }}
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
-            className={cn("relative px-4 py-2 rounded-full small-caps", tabClassName)}
+            className={cn("relative px-4 py-2 rounded-full small-caps shadow-none", tabClassName)}
             style={{
               transformStyle: "preserve-3d",
               background: "rgb(23, 23, 23)"
@@ -63,7 +63,7 @@ export const Tabs = ({
                 layoutId="clickedbutton"
                 transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
                 className={cn(
-                  "absolute inset-0 bg-gradient-to-r from-prim-1 to-sec-1 but-act rounded-full ",
+                  "absolute inset-0 bg-gradient-to-r from-prim-1 to-sec-1 shadow-none but-act rounded-full ",
                   activeTabClassName
                 )}
               />
@@ -80,7 +80,7 @@ export const Tabs = ({
         active={active}
         key={active.value}
         hovering={hovering}
-        className={cn("mt-10", contentClassName)}
+        className={cn("mt-10 shadow-none", contentClassName)}
       />
     </>
   );

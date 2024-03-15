@@ -1,5 +1,4 @@
 "use client";
-import "./projects.css";
 import { Tabs } from "../ui/tabs";
 import { tabs } from "@/app/services/enums/projects.enum";
  
