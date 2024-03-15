@@ -8,7 +8,7 @@ export const tabs = [
         title:'Chappy',
         value: 'chappy', 
         content : (
-            <Link href='https://app-chappy.ddns.net/'>
+            <Link href='https://chappy.mbourkel.com/'>
             <div className="w-full projects-card flex flex-col justify-center items-center h-full rounded-2xl p-10 font-semibold card-glass-2">
            <p className='flex justify-center small-caps text-base lg:text-2xl'>Construction management app for individuals.</p>
            <Image
