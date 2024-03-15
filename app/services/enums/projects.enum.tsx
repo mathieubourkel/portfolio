@@ -16,7 +16,7 @@ export const tabs = [
                 alt="Screem from Chappy App"
                 className="object-scale-down rounded-xl py-5 w-[40rem] h-[30rem]"
                 />
-                <div className='flex'>
+                <div className='flex flex-wrap justify-center'>
                 <p className='text-sm font-semibold text-accent-1 mr-1'>Stack : </p><p className='text-sm'>TS | React | MS | NATS | AWS</p>
                 </div>
          </div>
@@ -35,7 +35,7 @@ export const tabs = [
                 alt="Screen for my Marketplace NFTS App"
                 className="object-scale-down rounded-xl py-5 w-[40rem] h-[30rem]"
                 />
-                <div className='flex'>
+                <div className='flex flex-wrap justify-center'>
                 <p className='text-sm font-semibold text-accent-1 mr-1'>Stack : </p><p className='text-sm'>Solidity | React | Hardhat | Remix | Smart contracts</p>
                 </div>
          </div>
@@ -54,7 +54,7 @@ export const tabs = [
                 alt="Screen from my github account"
                 className="object-scale-down rounded-xl py-5 w-[40rem] h-[30rem]"
                 />
-                <div className='flex'>
+                <div className='flex flex-wrap justify-center'>
                 <p className='text-sm font-semibold text-accent-1 mr-1'>Stack : </p><p className='text-sm'>MS | Go | TS | React | Solidity</p>
                 </div>
          </div>

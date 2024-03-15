@@ -50,7 +50,7 @@ export default function Navbar({sticky, active, handleOpen}:{sticky:boolean, han
        </div>
       
   </nav>
-  {showMenu && <ul className={`lg:hidden fixed z-40 w-full h-[100vh] menu-nav gap-10 small-caps flex flex-col items-center justify-center bg-bg-6 p-2 `}>
+  {showMenu && <ul className={`lg:hidden fixed z-40 w-full h-[100vh] menu-nav gap-10 small-caps flex flex-col items-center bg-bg-6 p-2 pt-10 lg:pt-0 `}>
       <li className={`${active === 1 && 'active'} `}><Link to="home" smooth={true} duration={500} onClick={toggleMenu}>Home</Link></li>
         <li className={`${active === 2 && 'active'} `}><Link to="about" smooth={true} duration={500} onClick={toggleMenu}>About me</Link></li>
         <li className={`${active === 3 && 'active'} `}><Link to="skills" smooth={true} duration={500} onClick={toggleMenu}>Skills</Link></li>

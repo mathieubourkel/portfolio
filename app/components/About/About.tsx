@@ -25,7 +25,7 @@ export default function About() {
           </article>
 
         <article className="flex flex-wrap items-center justify-center 3xl:justify-start lg:w-1/2 pt-10 lg:pt-0">
-        <ul className="cloud w-[17rem] md:w-[25rem]" role="navigation" aria-label="Webdev word cloud">
+        <ul className="cloud w-[15rem] md:w-[25rem]" role="navigation" aria-label="Webdev word cloud">
           {tags.map((tag:intTag, index:number)=>(
             <li key={index}><a href={tag.href} data-weight={tag.weight}>{tag.name}</a></li>
           ))}
