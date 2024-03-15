@@ -14,7 +14,7 @@ export const tabs = [
            <Image
                 src={chappy}
                 alt="Screem from Chappy App"
-                className="object-cover rounded-xl py-5 w-[40rem] h-[30rem]"
+                className="object-scale-down rounded-xl py-5 w-[40rem] h-[30rem]"
                 />
                 <div className='flex'>
                 <p className='text-sm font-semibold text-accent-1 mr-1'>Stack : </p><p className='text-sm'>TS | React | MS | NATS | AWS</p>
@@ -33,7 +33,7 @@ export const tabs = [
            <Image
                 src={marketplace}
                 alt="Screen for my Marketplace NFTS App"
-                className="object-cover rounded-xl py-5 w-[40rem] h-[30rem]"
+                className="object-scale-down rounded-xl py-5 w-[40rem] h-[30rem]"
                 />
                 <div className='flex'>
                 <p className='text-sm font-semibold text-accent-1 mr-1'>Stack : </p><p className='text-sm'>Solidity | React | Hardhat | Remix | Smart contracts</p>
@@ -52,7 +52,7 @@ export const tabs = [
            <Image
                 src={github}
                 alt="Screen from my github account"
-                className="object-cover rounded-xl py-5 w-[40rem] h-[30rem]"
+                className="object-scale-down rounded-xl py-5 w-[40rem] h-[30rem]"
                 />
                 <div className='flex'>
                 <p className='text-sm font-semibold text-accent-1 mr-1'>Stack : </p><p className='text-sm'>MS | Go | TS | React | Solidity</p>
