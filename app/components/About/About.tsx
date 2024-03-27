@@ -17,7 +17,8 @@ export default function About() {
               <h3 className='pb-3'>Embracing a philosophy of continuous self-improvement</h3>
             </div>
             <div>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum deserunt, mollitia sed quam ut, quisquam nam ab non neque error facere, consequatur voluptatem distinctio sunt adipisci minima dignissimos deleniti libero.
+            After six years of experience in various roles related to IT administration, I am now seeking to deepen my technical skills 
+            and create innovative solutions in application development.
             </div>
             <div className='lg:py-10 py-5'>
             <button onClick={openCV}>Download CV</button>

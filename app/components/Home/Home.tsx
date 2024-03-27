@@ -12,17 +12,16 @@ export default function Home({handleOpen}:{handleOpen: () => void}) {
     <div className='container flex flex-col lg:flex-row-reverse lg:justify-between'>
     <article className='flex xl:justify-end self-center xl:w-1/2'>
       
-        <div>
-        <FontAwesomeIcon className='object-scale-down xl:h-[40vh] xl:w-[40vh] h-[30vh] w-[30vh]' icon={faEthereum} color={"rgb(79, 72, 112)"}/>
+        
         {/* <Image
           className='object-scale-down xl:h-[50vh] xl:w-[50vh] h-[30vh] w-[30vh]'
           src={moi}
           alt="photo de mathieu bourkel"
         /> */}
-        </div>
+     
         
       </article>
-      <article className='xl:w-1/2 xl:px-0 mt-5 flex flex-col self-center'>
+      <article className='xl:w-1/2 xl:px-0 flex flex-col self-center'>
         <h2 className='flex small-caps'>Hi There !</h2>
         <div className='md:flex'>
           <h1 >{"Mathieu"}</h1>
@@ -35,10 +34,8 @@ export default function Home({handleOpen}:{handleOpen: () => void}) {
         <h3 className="2xl:hidden flex font-medium"> 
           <TextGenerateEffect words="Backend Developer.-DevOps.-Web3."/>
         </h3>
-        <p className='mt-5'>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-         Atque et doloribus ratione repellendus ea, voluptatem dolore temporibu
-         s fuga, totam dicta exercitationem molestiae voluptatum? Est iusto commodi
-          in itaque corrupti quidem.</p>
+        <p className='mt-5'>If you're seeking an autonomous full-stack developer with a robust understanding of infrastructure, demonstrated 
+        through past experiences and an AWS Solutions Architect certification, fell free to click below ! :)</p>
         </div>
         <div className='flex justify-between py-5 2xl:py-10'>
         <div>
