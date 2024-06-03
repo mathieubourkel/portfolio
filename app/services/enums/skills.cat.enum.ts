@@ -3,11 +3,13 @@ import { faBitcoin, faReact } from "@fortawesome/free-brands-svg-icons"
 export const skills = [
     // const shield = faShieldHalved
     [
-        {name: 'Go'}, 
+        
         {name:'TypeScript'},
-        {name:'Microservices'},
         {name:"NestJs | NATS "}, 
-        {name:'TDD | Clean archi'}, 
+        {name:'Microservices'},
+        {name:'FaaS / Lambda'},
+        {name:'Unit Tests / Jest'}, 
+        {name:'Hexagonale Archi'}, 
         {name:'Redis'},
         
     ],
@@ -22,7 +24,8 @@ export const skills = [
     [
         {name: 'AWS (certified)'}, 
         {name:'Docker'},
-        {name:"Kubernetes"}, 
+        {name:"Terraform"}, 
+        {name:"Serverless / SDK"}, 
         {name:'Gitlab CI/CD'}, 
         {name:'Linux'},
         {name:'Bash'},
@@ -31,16 +34,15 @@ export const skills = [
         {name: 'Solidity'}, 
         {name:'Hardhat'},
         {name:"Ether.js"}, 
-        {name:'IPFS'}, 
         {name:'ERC20 | ERC721'},
         {name:'Remix'},
         {name:'Smart contracts'},
     ],
     [
-        {name: 'MySQL'}, 
-        {name: 'MongoDB'},
+        {name: 'MySQL/Postgres'}, 
+        {name: 'MongoDB / Mongoose'},
         {name: 'DynamoDB | RDS'},
-        {name: 'Mongoose'}, 
+        {name: 'Prisma'}, 
         {name: 'TypeORM'}, 
     ],
     [
